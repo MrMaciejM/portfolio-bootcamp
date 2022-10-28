@@ -1,24 +1,60 @@
+:root {
+  --lightblack: #242424;
+  --offwhite: #fcfcfc;
+  --anchors: #fff;
+}
+
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
+  font-family: "Manrope", sans-serif;
   line-height: 1.5;
+  background-color: var(--lightblack);
+  color: var(--offwhite);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-p {
-  margin: 0;
+header nav {
+  margin-top: 1rem;
+  margin-right: 3rem;
+  align-self: flex-end;
+}
+/* customising anchor tags */
+a,
+a:visited {
+  color: var(--anchors);
+  text-decoration: none;
+}
+a:hover {
+  cursor: pointer;
+}
+/* here I am targeting only the central <a> tag */
+nav a:nth-child(2) {
+  margin: 0 1rem;
+}
+
+h1 {
+  font-size: 2.4em;
+}
+
+/* hero banner */
+
+.hero-banner {
+  background-image: url(/images/02-portfolio-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
 }
