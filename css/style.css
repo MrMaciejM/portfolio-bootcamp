@@ -1,6 +1,7 @@
 /* Resets and colors */
 :root {
-  --lightblack: #242424;
+  --lightblack: #232323;
+  /* OG lightblack: #242424 */
   --offwhite: #fcfcfc;
   --anchors: #fff;
   --imggreen: #00ce41;
@@ -124,12 +125,13 @@ h1 {
   align-items: center;
   margin: 0 20rem;
   margin-top: 10rem;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   padding: 0 5rem;
-  padding-top: 5rem;
-  padding-bottom: 10rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   border-left: #00ce41 1px solid;
   border-right: #00ce41 1px solid;
+  border-top: #00ce41 1px dashed;
 }
 
 .about-me-card p {
@@ -138,6 +140,40 @@ h1 {
 }
 
 /* MY WORK SECTION */
-.my-work-card {
-  height: 1200px;
+.my-work-container {
+  display: grid;
+  grid-template-areas:
+    "h h h h h h"
+    "c c d d e e";
+  grid-area: h;
+  order: 3;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin: 0 5rem;
+  padding: 3rem 0;
+  border: solid 1px var(--imggreen);
+  height: 600px;
+  max-width: 100%;
+  background-image: url(/images/leaves-background.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.my-work-container h2 {
+  grid-area: h;
+}
+.my-work-card-1 {
+  grid-area: c;
+}
+.my-work-card-2 {
+  grid-area: d;
+}
+.my-work-card-3 {
+  grid-area: e;
+}
+
+.my-work-cards {
+  border: #00ce41 2px solid;
+  border-radius: 11px;
 }
