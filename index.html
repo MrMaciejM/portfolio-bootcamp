@@ -18,9 +18,9 @@
     <!-- main logo / nav -->
     <header>
       <nav>
-        <a href="#about-me">About Me</a>
-        <a href="#my-work">My Work</a>
-        <a href="">Contact</a>
+        <a class="nav-links" href="#about-me">About Me</a>
+        <a class="nav-links" href="#my-work">My Work</a>
+        <a class="nav-links" href="">Contact</a>
       </nav>
       <h1>Hello, I'm <span>Maciej</span>.</h1>
       <div class="profile-img-container">
@@ -92,13 +92,22 @@
           <label for="email">Email</label>
           <input id="email" type="email" />
           <label for="message">Message</label>
-          <textarea id="message"></textarea>
+          <textarea
+            id="message"
+            placeholder="P.S. you can click the cat at the bottom to get to my repo."
+          ></textarea>
         </form>
       </section>
       <!-- contact -->
     </main>
-    <footer id="contact">
-      <h2>Footer</h2>
+    <footer>
+      <a
+        class="github-link"
+        href="https://github.com/MrMaciejM?tab=repositories"
+        target="_blank"
+      >
+        <img src="/images/icons8-github-120-white.png" />
+      </a>
     </footer>
   </body>
 </html>
