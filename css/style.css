@@ -1,17 +1,11 @@
 /* Resets and colors */
 :root {
   --lightblack: #232323;
-  /* OG lightblack: #242424 */
+  /* original lightblack: #242424 */
   --offwhite: #fcfcfc;
   --anchors: #fff;
   --imggreen: #00ce41;
   --cream: #cdcdbb;
-  /* 
-  colors: 
-  #00ff51 - first green
-  #ff7373
-  #ff4040 
-  */
 }
 
 * {
@@ -28,13 +22,14 @@ span {
   color: var(--imggreen);
 }
 
-/* Start of the page */
 body {
   font-family: "Manrope", sans-serif;
   line-height: 1.5;
   background-color: var(--lightblack);
   color: var(--offwhite);
 }
+
+/* header, nav and profile picture */
 header {
   display: flex;
   flex-direction: column;
@@ -42,7 +37,7 @@ header {
   max-width: 100%;
   text-align: center;
   margin-bottom: 6rem;
-  /*margin-bottom creates a GAP between header and about-me section*/
+  /*margin-bottom creates a gap between the header and about-me section*/
 }
 header nav {
   margin-top: 1rem;
@@ -58,9 +53,9 @@ header nav {
   border-bottom: solid 1px var(--imggreen);
   padding: 0 0.4rem;
   padding-bottom: 0.2rem;
-  /* the tranision here is an ease-off effect, so that the colors do not change too quickly */
-  transition: all 0.7s;
   font-size: 1rem;
+  transition: all 0.7s;
+  /* the tranision here is an ease-off effect, so that the colors do not change too quickly */
 }
 .nav-links:hover {
   cursor: pointer;
@@ -70,7 +65,7 @@ header nav {
   border-radius: 12px;
   transform: scale(1.2);
 }
-/* here I am targeting only the central <a> tag */
+/* here I am targeting only the central <a> tag to create margin spacing */
 nav a:nth-child(2) {
   margin: 0 1.4rem;
 }
@@ -115,7 +110,7 @@ h1 {
 }
 
 /* ABOUT ME SECTION */
-.about-me-card {
+.about-me-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -130,7 +125,7 @@ h1 {
   border-top: #00ce41 1px dashed;
 }
 
-.about-me-card p {
+.about-me-section p {
   text-align: center;
   margin-top: 1rem;
 }
