@@ -23,6 +23,7 @@
 
 /* Global colors */
 h2,
+h3,
 span {
   color: var(--imggreen);
 }
@@ -113,10 +114,6 @@ h1 {
   font-weight: 600;
 }
 
-/* MAIN HERO WRAPPER */
-.main-hero {
-}
-
 /* ABOUT ME SECTION */
 .about-me-card {
   display: flex;
@@ -175,12 +172,12 @@ h1 {
 }
 
 .my-work-cards {
-  border: #00ce41 2px solid;
+  /* border: #00ce41 2px solid; */
   border-radius: 11px;
   transition: all 0.7s;
 }
 .my-work-cards img {
-  border: solid 2px var(--offwhite);
+  border: solid 1px var(--imggreen);
   border-radius: 11px;
   overflow: hidden;
 }
@@ -206,6 +203,9 @@ form {
   flex-direction: column;
   align-content: center;
 }
+label {
+  margin-top: 1rem;
+}
 input {
   border-radius: 9px;
   border: none;
@@ -221,6 +221,11 @@ textarea {
   padding: 0.2rem;
   word-wrap: break-word;
   max-width: 27.8rem;
+}
+button {
+  margin: 1rem 10rem;
+  padding: 0.2rem;
+  border-radius: 9px;
 }
 
 /* Footer */
