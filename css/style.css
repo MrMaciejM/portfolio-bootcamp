@@ -85,7 +85,7 @@ nav a:nth-child(2) {
 .profile-img-container {
   display: flex;
   flex-direction: column;
-  background-image: url(/images/profile_pic_bootcamp.png);
+  background-image: url(../images/profile_pic_bootcamp.png);
   width: 15rem;
   height: 21rem;
   background-size: cover;
