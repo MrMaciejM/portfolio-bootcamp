@@ -16,7 +16,7 @@ When designing my portfolio, I have had few very important things in mind, but t
 
 I drew inspiration for this design from the Super Mario game - particularly a specific object - the tube from where Mario can emerge. See example below.
 
-/images/super-mario-chars-tubes.jpg
+![image of various Super Mario characters emerging from a green tube](/images/super-mario-chars-tubes.jpg)
 
 But instead of Mario, you'd see a card with my profile picture on it - with added CSS that when you hover over it - or click on a mobile device - green light would emerge around it.
 
