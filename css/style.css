@@ -1,7 +1,6 @@
 /* Resets and colors */
 :root {
   --lightblack: #232323;
-  /* original lightblack: #242424 */
   --offwhite: #fcfcfc;
   --anchors: #fff;
   --imggreen: #00ce41;
@@ -15,11 +14,22 @@
   scroll-behavior: smooth;
 }
 
-/* Global colors */
+/* Helper classes */
+.border-ltr {
+  /* border, left top right */
+  border-left: 1px solid var(--imggreen);
+  border-top: 1px solid var(--imggreen);
+  border-right: 1px solid var(--imggreen);
+}
+
+/* Heading and span colors */
 h2,
 h3,
 span {
   color: var(--imggreen);
+}
+h1 {
+  font-size: 2.4em;
 }
 
 body {
@@ -44,7 +54,6 @@ header nav {
   margin-right: 3rem;
   align-self: flex-end;
 }
-
 /* Customising anchor tags */
 .nav-links,
 .nav-links:visited {
@@ -55,11 +64,10 @@ header nav {
   padding-bottom: 0.2rem;
   font-size: 1rem;
   transition: all 0.7s;
-  /* the tranision here is an ease-off effect, so that the colors do not change too quickly */
+  /* the tranision here is an ease-off effect, so that the colors do not change too rapidly */
 }
 .nav-links:hover {
   cursor: pointer;
-  border-bottom: solid 1px var(--imggreen);
   transition: all 0.7s;
   box-shadow: 0 0 9px 4px var(--imggreen);
   border-radius: 12px;
@@ -69,11 +77,6 @@ header nav {
 nav a:nth-child(2) {
   margin: 0 1.4rem;
 }
-
-h1 {
-  font-size: 2.4em;
-}
-
 .profile-img-container:hover {
   transition: all 0.7s;
   box-shadow: 0 0 200px 1px var(--imggreen);
@@ -92,7 +95,6 @@ h1 {
   align-self: center;
   /* note: bc of flex column, you have to use align option to position items horizontally */
   border-radius: 11px;
-  border: solid 0px var(--offwhite);
   box-shadow: 0 0 10px 1px var(--imggreen);
   transition: all 0.7s;
 }
@@ -117,14 +119,9 @@ h1 {
   margin: 0 20rem;
   margin-top: 10rem;
   margin-bottom: 4rem;
-  padding: 0 5rem;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  border-left: #00ce41 1px solid;
-  border-right: #00ce41 1px solid;
+  padding: 4rem 5rem;
   border-top: #00ce41 1px dashed;
 }
-
 .about-me-section p {
   text-align: center;
   margin-top: 1rem;
@@ -143,9 +140,6 @@ h1 {
   text-align: center;
   margin: 0 5rem;
   padding: 3rem 0;
-  border-top: solid 1px var(--imggreen);
-  border-left: solid 1px var(--imggreen);
-  border-right: solid 1px var(--imggreen);
   height: 600px;
   max-width: 100%;
   background-image: url(/images/leaves-background.jpeg);
@@ -153,6 +147,7 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+/* Layout for the upcoming projects' thumbnail and description */
 .my-work-container h2 {
   grid-area: h;
 }
@@ -166,8 +161,8 @@ h1 {
   grid-area: e;
 }
 
+/* my-work-cards are the Placeholder, Coming Soon and <p> placeholder cards under My Work heading */
 .my-work-cards {
-  /* border: #00ce41 2px solid; */
   border-radius: 11px;
   transition: all 0.7s;
 }
@@ -224,7 +219,6 @@ button {
 }
 
 /* Footer */
-
 footer {
   display: flex;
   justify-content: center;
