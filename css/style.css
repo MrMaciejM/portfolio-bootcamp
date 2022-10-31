@@ -98,11 +98,13 @@ nav a:nth-child(2) {
   box-shadow: 0 0 10px 1px var(--imggreen);
   transition: all 0.7s;
 }
+/* this is the  'Hover over me' text */
 .profile-img-container p {
   color: var(--lightblack);
   align-items: flex-end;
   position: relative;
-  top: 19rem;
+  top: 90.6%;
+  /* 19rem original unit */
   background-color: rgb(205, 205, 187, 0.6);
   border-bottom-left-radius: 11px;
   border-bottom-right-radius: 11px;
