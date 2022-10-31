@@ -20,6 +20,8 @@ I drew inspiration for this design from the Super Mario game - particularly a sp
 
 But instead of Mario, you'd see a card with my profile picture on it - with added CSS that when you hover over it - or click on a mobile device - green light would emerge around it.
 
+Admittedly, the design is very simple as of now, however, in my opinion, the information is presented clearly, the site is fully responsive, all links work and the colors used make it easy to read.
+
 ## Links To Deployed Portfolio Site
 
 https://mrmaciejm.github.io/portfolio/
