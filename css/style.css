@@ -24,7 +24,6 @@
 
 /* Heading and span colors */
 h2,
-h3,
 span {
   color: var(--imggreen);
 }
@@ -137,10 +136,10 @@ nav a:nth-child(2) {
     "c c d d e e";
   grid-area: h;
   order: 3;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 0 5rem;
+  margin: 0 6rem;
   padding: 3rem 0;
   height: 600px;
   max-width: 100%;
@@ -164,19 +163,39 @@ nav a:nth-child(2) {
 }
 
 /* my-work-cards are the Placeholder, Coming Soon and <p> placeholder cards under My Work heading */
+.work-cards-wrapper {
+  display: flex;
+  justify-content: space-around;
+}
 .my-work-cards {
   border-radius: 11px;
   transition: all 0.7s;
+  margin-left: 1.2rem;
 }
 .my-work-cards img {
   border: solid 1px var(--imggreen);
   border-radius: 11px;
-  overflow: hidden;
 }
 .my-work-cards:hover {
-  box-shadow: 0 0 50px 1px var(--imggreen);
+  /* box-shadow: 0 0 50px 1px var(--imggreen); */
   transition: all 0.7s;
   transform: scale(1.05);
+}
+.project-desc {
+  /* border: solid 1px var(--imggreen); */
+  border-radius: 3px;
+  background-color: black;
+  word-wrap: break-word;
+  margin: 0 18%;
+}
+.my-work-card-2 p {
+  margin: 0 3%;
+}
+.my-work-card-3 {
+  margin-left: 0;
+}
+.my-work-card-3 p {
+  margin: 0 14%;
 }
 
 /* CONTACT SECTION */
